@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:paddingHorizontal="10dp">
+
+    <LinearLayout
+        android:id="@+id/photo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="498dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/comment_user_photo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="5dp"
+            android:src="@drawable/ic_branded_profile_tab_icon"
+            app:civ_border_color="@color/dark_blue"
+            app:civ_border_width="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/comment_user_photo"
+        tools:layout_editor_absoluteY="206dp">
+
+        <TextView
+            android:id="@+id/comment_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:text="name"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:text="kfjkjdnfj fijsrfii sfinsfnss srfijmn kisdn likfs knfdkrnfkl mfkrlinfv lrfjfji " />
+    </LinearLayout>
+
+</LinearLayout>

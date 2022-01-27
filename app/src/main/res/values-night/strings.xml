@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DLK</string>
+
+    <string name="home_tab_title">Home</string>
+    <string name="profile_tab_title">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="log_out">LOG OUT</string>
+    <string name="comments">Comments</string>
+    <string name="post_comment">Post</string>
+    <string name="comment_hint">Comment ...</string>
+    <string name="tab_on_photo_to_copy_the_link">Tab on photo to copy the link</string>
+    <string name="share">share</string>
+    <!--<string name="and_more">And more ...</string>
+    <string name="name">Name</string>
+    <string name="signed_in_players_can">Signed in players can</string>
+    <string name="request_official_or_personalized_kits">Request official or personalized kits</string>
+    <string name="save_posted_kits">Save posted kits</string>
+    <string name="kicks_like_posted_kits">Kicks ( like posted kits )</string>
+    <string name="comment_on_kits">Comment on kits</string>
+    <string name="kits_are_available_to_use_without_signing_in">Kits are available to use without signing in</string>-->
+    <string name="profile_header_signout">profile_header_signout</string>
+    <string name="header_profile_signin">header_profile_signin</string>
+    <string name="user_photo">user_photo</string>
+    <string name="name">Name</string>
+    <string name="signed_in_players_can">Signed in players can</string>
+    <string name="save_posted_kits">Save posted kits</string>
+    <string name="kicks_like_posted_kits">Kicks ( like posted kits )</string>
+    <string name="comment_on_kits">Comment on kits</string>
+    <string name="and_more">And more ...</string>
+    <string name="sign_in_to_unlock_your_saves_list">Sign in to unlock your Saves List</string>
+    <string name="logo_view">logo view</string>
+    <string name="team_name">team name</string>
+    <string name="team_league">team league</string>
+
+
+</resources>

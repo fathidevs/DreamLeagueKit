@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">DLS Kits</string>
+
+    <string name="home_tab_title">Home</string>
+    <string name="profile_tab_title">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!-- FACEBOOK -->
+    <string name="facebook_app_id">1337065773292804</string>
+    <string name="fb_login_protocol_scheme">fb1337065773292804</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="comments">Comments</string>
+    <string name="post_comment">Post</string>
+    <string name="comment_hint">Comment …</string>
+    <string name="tab_on_photo_to_copy_the_link">Tab to copy the link</string>
+    <string name="share">share</string>
+    <!--<string name="and_more">And more ...</string>
+    <string name="name">Name</string>
+    <string name="signed_in_players_can">Signed in players can</string>
+    <string name="request_official_or_personalized_kits">Request official or personalized kits</string>
+    <string name="save_posted_kits">Save posted kits</string>
+    <string name="kicks_like_posted_kits">Kicks ( like posted kits )</string>
+    <string name="comment_on_kits">Comment on kits</string>
+    <string name="kits_are_available_to_use_without_signing_in">Kits are available to use without signing in</string>-->
+    <string name="profile_header_signout">profile_header_signout</string>
+    <string name="header_profile_signin">header_profile_signin</string>
+    <string name="user_photo">user_photo</string>
+    <string name="name">Name</string>
+    <string name="signed_in_players_can">Signed in players can</string>
+    <string name="save_posted_kits">Save posted kits</string>
+    <string name="kicks_like_posted_kits">Kicks ( like posted kits )</string>
+    <string name="comment_on_kits">Comment on kits</string>
+    <string name="and_more">And more …</string>
+    <string name="sign_in_to_unlock_your_saves_list">Sign in to unlock Saves List</string>
+    <string name="logo_view">logo view</string>
+    <string name="team_name">team name</string>
+    <string name="team_league">team league</string>
+    <string name="tab_item_add">Add</string>
+    <string name="tab_item_strips">Strips</string>
+    <string name="tab_item_color">Color</string>
+    <string name="tab_item_guidelines">Guides</string>
+    <string name="creat_your_own_kit">Create your own kit</string>
+    <string name="invite_friend_to_discord">Invite friend to discord</string>
+
+    <string name="server_client_id">12456002441-2c9gfamh191j9pnd302iforn0quridvp.apps.googleusercontent.com</string>
+    <string name="design">Design</string>
+    <string name="saved">Saved</string>
+    <string name="report">Report</string>
+    <string name="couldn_t_find_your_team">Couldn\'t find your team?</string>
+
+</resources>

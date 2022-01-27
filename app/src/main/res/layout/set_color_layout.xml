@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/set_color_layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/light_black">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_black"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/close_btn_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@null"
+            android:tint="@color/dark_white"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_black"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:text="Select Item"
+            android:textColor="@color/dark_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:text="Scroll up to color strips"
+            android:textColor="@color/ligth_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/light_black"
+        android:overScrollMode="never"
+        android:scrollbarThumbVertical="@color/dark_white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_black"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="ASSETS"
+                android:textColor="@color/ligth_gray" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/light_black">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:id="@+id/gridLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:columnCount="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:rowCount="6">
+
+                    <CheckBox
+                        android:id="@+id/all_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="All"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/socks_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Socks"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/shirt_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Shirt"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/shirt_number_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Shirt number"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/long_sleeves_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Long sleeves"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/short_number_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Short number"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/short_sleeves_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Short sleeves"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/rings_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Rings"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/under_sleeve_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Under sleeves"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/circle_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Circle"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/shorts_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Shorts"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/background_check_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Background"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                </androidx.gridlayout.widget.GridLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="STRIPS"
+                android:textColor="@color/ligth_gray" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/light_black">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_black"
+                    app:columnCount="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:rowCount="3">
+
+                    <CheckBox
+                        android:id="@+id/all_check_box_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="All"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/shoulder_check_box_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Shoulder"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/short_sleeves_check_box_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Short sleeves"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/long_sleeves_check_box_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Long sleeves"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/shorts_check_box_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Shorts"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                    <CheckBox
+                        android:id="@+id/socks_check_box_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="25dp"
+                        android:buttonTint="@color/dark_white"
+                        android:text="Socks"
+                        android:textColor="@color/dark_white"
+                        android:textSelectHandle="@color/dark_white"
+                        android:textSize="12sp"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="0" />
+
+                </androidx.gridlayout.widget.GridLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="100"
+        android:background="@color/light_black"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:overScrollMode="always"
+        android:scrollbarTrackVertical="@color/dark_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/paint_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/dark_white"
+            android:gravity="center_vertical"
+            android:text="Paint"
+            android:textColor="@color/dark_blue" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

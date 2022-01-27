@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_black">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_black"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@null"
+            android:tint="@color/dark_white"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_black"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="Selecet Strip Type"
+            android:textColor="@color/dark_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_black"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/strip_btn_i"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/light_ripple_eff"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="@dimen/card_corner">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/i_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="I"
+                    android:textColor="@color/dark_white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/strip_btn_ii"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/light_ripple_eff"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="@dimen/card_corner">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ii_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="II"
+                    android:textColor="@color/dark_white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/strip_btn_iii"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/light_ripple_eff"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="@dimen/card_corner">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/iii_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="III"
+                    android:textColor="@color/dark_white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_black"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:text="Where Do you Like The Strips?"
+            android:textColor="@color/dark_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_black"
+        app:columnCount="2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_weight="2"
+        app:rowCount="6">
+
+        <CheckBox
+            android:id="@+id/all_check_box_sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:buttonTint="@color/dark_white"
+            android:text="All"
+            android:textColor="@color/dark_white"
+            android:textSelectHandle="@color/dark_white"
+            android:textSize="12sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="0" />
+
+        <CheckBox
+            android:id="@+id/shoulder_check_box_sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:buttonTint="@color/dark_white"
+            android:text="Shoulders"
+            android:textColor="@color/dark_white"
+            android:textSelectHandle="@color/dark_white"
+            android:textSize="12sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="0" />
+
+        <CheckBox
+            android:id="@+id/short_sleeve_check_box_sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:buttonTint="@color/dark_white"
+            android:text="Short sleeves"
+            android:textColor="@color/dark_white"
+            android:textSelectHandle="@color/dark_white"
+            android:textSize="12sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="0" />
+
+        <CheckBox
+            android:id="@+id/long_sleeve_check_box_sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:buttonTint="@color/dark_white"
+            android:text="Long Sleeves"
+            android:textColor="@color/dark_white"
+            android:textSelectHandle="@color/dark_white"
+            android:textSize="12sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="0" />
+
+        <CheckBox
+            android:id="@+id/shorts_check_box_sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:buttonTint="@color/dark_white"
+            android:text="Shorts"
+            android:textColor="@color/dark_white"
+            android:textSelectHandle="@color/dark_white"
+            android:textSize="12sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="0" />
+
+        <CheckBox
+            android:id="@+id/socks_check_box_sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:buttonTint="@color/dark_white"
+            android:text="Socks"
+            android:textColor="@color/dark_white"
+            android:textSelectHandle="@color/dark_white"
+            android:textSize="12sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="0" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_black"
+        android:gravity="right"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/apply_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/dark_white"
+            android:text="Apply"
+            android:textColor="@color/dark_blue" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
